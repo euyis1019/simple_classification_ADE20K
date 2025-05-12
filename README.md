@@ -1,6 +1,6 @@
 # ADE20K多标签场景分类
 
-这个项目实现了基于ADE20K数据集的多标签场景分类模型。通过多标签分类，模型能够识别图像中出现的所有物体类别，从而提供更全面的场景理解。**其中，损失函数使用的是[Asymmetric Loss For Multi-Label Classification](https://arxiv.org/abs/2009.14119)论文所提出的Asymmetric Loss，专门针对多标签分类的场景下。
+这个项目实现了基于ADE20K数据集的多标签场景分类模型。通过多标签分类，模型能够识别图像中出现的所有物体类别，从而提供更全面的场景理解。**其中，损失函数使用的是[Asymmetric Loss For Multi-Label Classification](https://arxiv.org/abs/2009.14119)论文所提出的Asymmetric Loss，专门针对多标签分类的场景下**。
 
 
 ## 数据集
