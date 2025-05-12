@@ -1,6 +1,7 @@
 # ADE20K多标签场景分类
 
-这个项目实现了基于ADE20K数据集的多标签场景分类模型。通过多标签分类，模型能够识别图像中出现的所有物体类别，从而提供更全面的场景理解。
+这个项目实现了基于ADE20K数据集的多标签场景分类模型。通过多标签分类，模型能够识别图像中出现的所有物体类别，从而提供更全面的场景理解。**其中，损失函数使用的是[Asymmetric Loss For Multi-Label Classification](https://arxiv.org/abs/2009.14119)论文所提出的Asymmetric Loss，专门针对多标签分类的场景下。
+
 
 ## 数据集
 
@@ -23,7 +24,7 @@
     ├── annotations/       # 标注目录
     └── ade_class.yaml     # 类别映射文件
 ```
-
+==其中你需要自行下载ADE数据集==
 ## 模型架构
 
 该项目使用预训练的ResNet152作为骨干网络，并添加了自定义的分类头来实现多标签分类。关键特性：
@@ -46,8 +47,11 @@
 ## 使用方法
 
 ### 1. 准备数据集
-
-确保ADE20K数据集已下载并解压到`ADEChallengeData2016`目录下。数据集结构应如下：
+```shell
+wget http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip
+unzip ADEChallengeData2016.zip
+```
+确保ADE20K数据集已下载(需要挂梯子）并解压到`ADEChallengeData2016`目录下。数据集结构应如下：
 
 ```
 ADEChallengeData2016/
