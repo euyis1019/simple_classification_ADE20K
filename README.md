@@ -51,7 +51,7 @@
 wget http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip
 unzip ADEChallengeData2016.zip
 ```
-确保ADE20K数据集已下载(需要挂梯子）并解压到`ADEChallengeData2016`目录下。数据集结构应如下：
+确保ADE20K数据集已下载(需要挂梯子）并解压到`ADEChallengeData2016`目录下，记得将ade_class.yaml放至数据集文件夹处。数据集结构应如下：
 
 ```
 ADEChallengeData2016/
